@@ -56,16 +56,16 @@ h1 {
 
 .text-preparation {
   margin-top: 60px;
-  padding: 0px 28px 0px 28px;
+  margin: 32px 28px 32px 28px;
 }
 
 .text-preparation h3 {
   color: #7a284e;
-  margin-bottom: 16px;
+  padding: 28px 0px 16px;
 }
 
 .text-preparation ul {
-  margin: 16px 40px 28px;
+  margin-left: 24px;
 }
 
 .text-preparation ul li {
@@ -73,10 +73,15 @@ h1 {
   color: #5f564d;
 }
 
+.text-preparation span {
+  font-weight: 700;
+  margin-left: 12px;
+}
+
 /* Ingredients */
 
 .text-ingredients {
-  margin: 32px 0px;
+  margin-bottom: 32px;
 }
 
 .text-ingredients h2 {
@@ -87,12 +92,16 @@ h1 {
 }
 
 .text-ingredients ul {
-  margin: 24px 40px 0px;
+  margin: 24px 0px 0px 24px;
 }
 
 .text-ingredients ul li {
   padding-bottom: 8px;
   color: #5f564d;
+}
+
+.text-ingredients span {
+  margin-left: 12px;
 }
 
 /* Instructions */
@@ -108,15 +117,20 @@ h1 {
 
 }
 
-.text-instr ol {
-  margin: 24px 40px 0px;
-  padding-left: 0;
+.instr {
+  margin-top: 24px;
 }
 
-.text-instr ol li {
-  list-style-position: outside;
+.item-instr {
+  display: flex;
+  flex-wrap: nowrap;
   padding-bottom: 8px;
-  color: #5f564d;
+}
+
+.num-item {
+  min-width: 16px;
+  margin-left: 8px;
+  margin-right: 16px;
 }
 
 /* Nutrition */
