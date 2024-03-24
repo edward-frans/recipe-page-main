@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.main-space {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  margin: 124px 0px;
+  width: 737px;
+  max-width: 737px;
+  height: auto;
+  background-color: #fff;
+  /* border: none 0px solid; */
+  border-radius: 24px;
+}
+
+/* Image container */
+
+.img-ct {
+  max-width: 737px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-ome {
+  max-width: 657px; /* La imagen no será más ancha que su contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  margin: 40px;
+  border-radius: 12px;
+}
+
+/* Text container */
+
+.text-ct {
+  width: 657px;
+  height: auto;
+  margin: 0 auto;
+  font-family: "outfit";
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Young Serif";
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.text-preparation {
+  margin-top: 60px;
+  padding: 0px 28px 0px 28px;
+}
+
+.text-preparation h3 {
+  color: #7a284e;
+  margin-bottom: 16px;
+}
+
+.text-preparation ul {
+  margin: 16px 40px 28px;
+}
+
+.text-preparation ul li {
+  padding-bottom: 8px;
+  color: #5f564d;
+}
+
+/* Ingredients */
+
+.text-ingredients {
+  margin: 32px 0px;
+}
+
+.text-ingredients h2 {
+  color: #854632;
+  font-family: "Young Serif";
+  font-weight: 400;
+
+}
+
+.text-ingredients ul {
+  margin: 24px 40px 0px;
+}
+
+.text-ingredients ul li {
+  padding-bottom: 8px;
+  color: #5f564d;
+}
+
+/* Instructions */
+
+.text-instr {
+  margin: 32px 0px;
+}
+
+.text-instr h2 {
+  color: #854632;
+  font-family: "Young Serif";
+  font-weight: 400;
+
+}
+
+.text-instr ol {
+  margin: 24px 40px 0px;
+  padding-left: 0;
+}
+
+.text-instr ol li {
+  list-style-position: outside;
+  padding-bottom: 8px;
+  color: #5f564d;
+}
+
+/* Nutrition */
+
+.text-nutrition {
+  margin: 32px 0px 40px;
+}
+
+.text-nutrition h2 {
+  color: #854632;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+.nt-p {
+  margin: 24px 0px
+}
+
+.row-nt {
+  display: flex;
+  width: auto;
+  margin: 12px 0px 12px 0px;
+  padding: 0px 32px;
+}
+
+.calories, .carbs, .protein, .fat {
+  flex: 1; /* Ambos divs ocuparán el mismo espacio disponible */
+  height: 24px; /* Altura de los divs */
+  line-height: 24px;
+}
+
+.nutrition-value {
+  color: #854632;
+}
+
+/* Others */
+
+hr {
+  border-width: 0.005px;
+  border-color: transparent;
+  border-bottom-color: #E3DDD7;
+}
+
+/* ---------------------- */
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  font-family: "outfit";
+  margin: 3px 0px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
