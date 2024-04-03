@@ -5,6 +5,7 @@
 
 body {
   background-color: hsl(30, 54%, 90%);
+  color: #5F564D;
 }
 
 .main-space {
@@ -52,6 +53,7 @@ h1 {
   font-family: "Young Serif";
   font-weight: 400;
   margin-bottom: 24px;
+  color: #312E2C;
 }
 
 .text-preparation {
@@ -64,18 +66,30 @@ h1 {
   padding: 28px 0px 16px;
 }
 
-.text-preparation ul {
-  margin-left: 24px;
-}
-
-.text-preparation ul li {
+.item-prep {
   padding-bottom: 8px;
   color: #5f564d;
 }
 
+.dot-item-prep {
+  width: 16px;
+  height: auto;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.dot-item-prep ul li {
+  list-style-position: inside;
+  color: #7A284E;
+}
+
+.item-prep {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .text-preparation span {
   font-weight: 700;
-  margin-left: 12px;
 }
 
 /* Ingredients */
@@ -88,20 +102,29 @@ h1 {
   color: #854632;
   font-family: "Young Serif";
   font-weight: 400;
-
+  margin-bottom: 24px;
 }
 
-.text-ingredients ul {
-  margin: 24px 0px 0px 24px;
-}
-
-.text-ingredients ul li {
+.item-ingr {
   padding-bottom: 8px;
   color: #5f564d;
 }
 
-.text-ingredients span {
-  margin-left: 12px;
+.dot-item-ingr {
+  width: 16px;
+  height: auto;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.dot-item-ingr ul li {
+  list-style-position: inside;
+  color: #854632;
+}
+
+.item-ingr {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /* Instructions */
@@ -185,4 +208,64 @@ hr {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 375px) {
+  /* Estilos para pantallas más pequeñas */
+  .main-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .img-ct {
+    width: 100vw;
+    display: block;
+    height: auto;
+  }
+
+  .img-ome {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0px;
+  }
+
+  .text-ct {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .text-title {
+    margin: 0px 32px 32px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .text-preparation {
+    margin: 32px;
+  }
+
+  .text-preparation h3 {
+    padding: 24px 24px 16px;
+  }
+
+  .prep {
+    margin: 0 24px 24px 24px;
+  }
+
+  .text-ingredients {
+    margin: 0 32px 32px 32px;
+  }
+
+  .text-instr {
+    margin: 32px;
+  }
+
+  .text-nutrition {
+    margin: 32px 32px 40px 32px;
+  }
+
 }
